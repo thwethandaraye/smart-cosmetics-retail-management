@@ -1,0 +1,1 @@
+# smart-cosmetics-retail-management
