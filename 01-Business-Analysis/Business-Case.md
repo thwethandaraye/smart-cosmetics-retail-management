@@ -287,20 +287,21 @@ Based on the dataset and business context, the project will focus on these **sev
 The proposed solution is a centralized retail management platform designed to connect operational processes and analytical reporting.
 
 #### Proposed modules
-`Smart Cosmetics Retail Management System
-│
-├── Product Management
-├── Customer Management
-├── Order Management
-├── Inventory Management
-├── Sales Management
-├── Reporting & Analytics
-└── User Management`
+| Module | Basis |
+|--------|-------|
+| Product Management | Dataset + proposed system |
+| Sales Management | **Strongly supported by dataset** |
+| Reporting & Analytics | **Strongly supported by dataset** |
+| Customer Management | Proposed system capability |
+| Order Management | Proposed system capability |
+| Inventory Management | Proposed system capability |
+| User Management | Proposed system capability |
 
 The system would use a centralized database to store and manage business information.
 
 ## 13. Proposed System Concept
 Current conceptual process
+```text
 Customer
     ↓
 Online Store / Social Media
