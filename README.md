@@ -359,7 +359,7 @@ The following are outside the current scope:
 | Version Control	| Git / GitHub |
 
 # 📁 Current Project Structure
-
+```text
 smart-cosmetics-retail-management/
 │
 ├── README.md
@@ -385,7 +385,7 @@ smart-cosmetics-retail-management/
     ├── User-Stories.md
     ├── Acceptance-Criteria.md
     └── Requirements-Prioritization.md
-
+```
 # 🚧 Planned Project Development
 
 The project will be expanded with additional business and system analysis deliverables.
@@ -509,6 +509,6 @@ Computer Science undergraduate interested in:
 This project is part of my professional portfolio and demonstrates my ability to analyze business problems, work with data, define requirements, and translate business needs into structured technology solutions.
 
 # 📫 Contact
-**LinkedIn:** Thwe Thandar Aye
-**GitHub:** thwethandaraye
-**Email:** thwethandaraye19@gmail.com
+**LinkedIn:** Thwe Thandar Aye 
+**GitHub:** thwethandaraye 
+**Email:** thwethandaraye19@gmail.com 
