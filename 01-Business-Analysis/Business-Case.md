@@ -319,18 +319,17 @@ Warehouse
 Delivery
     ↓
 Sales Reporting
+```
 
 Potential weaknesses in this conceptual process include:
+- Repetitive data entry
+- Separate operational information
+- Manual reporting
+- Delayed visibility
+- Difficulty maintaining consistent information
+These are **business-process assumptions for the simulated case**, not claims that the real dataset proves these activities currently occur.
 
-Repetitive data entry
-Separate operational information
-Manual reporting
-Delayed visibility
-Difficulty maintaining consistent information
-
-These are business-process assumptions for the simulated case, not claims that the real dataset proves these activities currently occur.
-
-14. Proposed Future State
+## 14. Proposed Future State
 
 The proposed TO-BE architecture is:
 
@@ -362,266 +361,240 @@ The proposed TO-BE architecture is:
                                │
                                ▼
                            Management
-15. Business Objectives
+
+## 15. Business Objectives
 
 The project will pursue the following objectives.
 
-BO-01 — Centralize business information
-
+### BO-01 — Centralize business information
 Create a structured system for managing product, customer, order, sales, and inventory information.
 
-BO-02 — Improve sales visibility
-
+### BO-02 — Improve sales visibility
 Provide management with timely information about sales performance across:
+- Countries
+- Products
+- Salespeople
+- Time periods
 
-Countries
-Products
-Salespeople
-Time periods
-BO-03 — Improve decision-making
-
+### BO-03 — Improve decision-making
 Convert transactional data into actionable business information through dashboards and reports.
 
-BO-04 — Reduce repetitive manual processes
-
+### BO-04 — Reduce repetitive manual processes
 Identify opportunities to automate repetitive data-entry and reporting activities.
 
-BO-05 — Improve data consistency
-
+### BO-05 — Improve data consistency
 Introduce structured validation and centralized data management.
 
-BO-06 — Support operational scalability
-
+### BO-06 — Support operational scalability
 Design a system that can support increased transaction volume and additional products, markets, employees, and customers.
 
-BO-07 — Enable future inventory visibility
-
+### BO-07 — Enable future inventory visibility
 Introduce inventory-management capabilities that can eventually support:
-
-Stock levels
-Reorder thresholds
-Low-stock alerts
-Inventory movement
-Product availability
-
+- Stock levels
+- Reorder thresholds
+- Low-stock alerts
+- Inventory movement
+- Product availability
 Again, these are proposed capabilities, not findings from the current dataset.
 
-16. Expected Business Benefits
+## 16. Expected Business Benefits
 
 If implemented successfully, the proposed system is expected to provide:
 
-1. Better management visibility
-
+### 1. Better management visibility
 Managers can access sales information without manually consolidating multiple reports.
 
-2. Faster decision-making
-
+### 2. Faster decision-making
 Dashboards can highlight important changes in sales and product performance.
 
-3. Improved product management
-
+### 3. Improved product management
 Product-level information can support promotional and portfolio decisions.
 
-4. Improved regional analysis
-
+### 4. Improved regional analysis
 Management can compare market performance and identify opportunities.
 
-5. Better salesperson monitoring
-
+### 5. Better salesperson monitoring
 Managers can monitor performance using consistent metrics.
 
-6. Improved data consistency
-
+### 6. Improved data consistency
 Centralized validation can reduce inconsistent or incomplete records.
 
-7. Scalability
-
+### 7. Scalability
 A centralized system can support future growth better than disconnected spreadsheets.
 
-17. Project Scope
-17.1 In Scope
+## 17. Project Scope
+### 17.1 In Scope
 
 The project will cover:
+- Business analysis
+- Business problem identification
+- Dataset analysis
+- Stakeholder analysis
+- Current-state process modeling
+- Future-state process modeling
+- Gap analysis
+- Business requirements
+- Functional requirements
+- Non-functional requirements
+- User stories
+- Acceptance criteria
+- Use-case analysis
+- Data-flow diagrams
+- Database design
+- ERD
+- SQL database design
+- Data-quality considerations
+- Reporting/dashboard requirements
+- AI-assisted requirements analysis
+- Test cases
+- Requirements Traceability Matrix
+- Portfolio case-study documentation
 
-Business analysis
-Business problem identification
-Dataset analysis
-Stakeholder analysis
-Current-state process modeling
-Future-state process modeling
-Gap analysis
-Business requirements
-Functional requirements
-Non-functional requirements
-User stories
-Acceptance criteria
-Use-case analysis
-Data-flow diagrams
-Database design
-ERD
-SQL database design
-Data-quality considerations
-Reporting/dashboard requirements
-AI-assisted requirements analysis
-Test cases
-Requirements Traceability Matrix
-Portfolio case-study documentation
-18. Out of Scope
+## 18. Out of Scope
 
 The following are outside the initial scope:
-
-Building a production-ready e-commerce website
-Real payment processing
-Real customer accounts
-Real logistics integration
-Real warehouse hardware
-Predictive AI models
-Live inventory synchronization
-Real company implementation
-Actual customer data collection
-
+- Building a production-ready e-commerce website
+- Real payment processing
+- Real customer accounts
+- Real logistics integration
+- Real warehouse hardware
+- Predictive AI models
+- Live inventory synchronization
+- Real company implementation
+- Actual customer data collection
 This keeps the project focused on Business Analysis and system analysis, rather than turning it into a generic software-development project.
 
-19. Key Stakeholders
-Stakeholder	Interest / Responsibility
-Business Owner	Overall business performance and ROI
-General Manager	Business operations and strategic decisions
-Sales Manager	Sales performance and salesperson monitoring
-Sales Staff	Customer orders and sales records
-Inventory Staff	Product availability and stock management
-Warehouse Staff	Product movement and fulfillment
-Customers	Product availability and order experience
-Finance Staff	Sales/payment information
-IT/System Administrator	System configuration and access
-Business Analyst	Requirements and process analysis
-Developers	System implementation
-QA/Testers	System validation
-20. High-Level Requirements Direction
+## 19. Key Stakeholders
+
+| Stakeholder	| Interest / Responsibility |
+|--------------|---------------------------|
+| Business Owner	| Overall business performance and ROI |
+| General Manager	| Business operations and strategic decisions |
+| Sales Manager	| Sales performance and salesperson monitoring |
+| Sales Staff	| Customer orders and sales records |
+| Inventory Staff	| Product availability and stock management |
+| Warehouse Staff	| Product movement and fulfillment |
+| Customers	| Product availability and order experience |
+| Finance Staff	| Sales/payment information |
+| IT/System Administrator	| System configuration and access |
+| Business Analyst	| Requirements and process analysis |
+| Developers	| System implementation |
+| QA/Testers	| System validation |
+
+## 20. High-Level Requirements Direction
 
 The business case leads naturally into the next stage of requirements analysis.
 
-Business Requirement 1
-
+### Business Requirement 1
 BR-01: The business shall maintain centralized information for products, customers, orders, sales, and inventory.
 
-Business Requirement 2
-
+### Business Requirement 2
 BR-02: The business shall improve visibility into sales and operational performance.
 
-Business Requirement 3
-
+### Business Requirement 3
 BR-03: The business shall reduce repetitive manual data-management and reporting activities.
 
-Business Requirement 4
-
+### Business Requirement 4
 BR-04: The business shall provide reliable reports to support management decision-making.
 
-21. Example Functional Requirements
+## 21. Example Functional Requirements
 
 The business requirements can later be translated into functional requirements.
 
-FR-01 — Product Management
-
+### FR-01 — Product Management
 The system shall allow authorized users to create, view, update, and deactivate product records.
 
-FR-02 — Order Management
-
+### FR-02 — Order Management
 The system shall allow authorized sales staff to record customer orders.
 
-FR-03 — Inventory Update
-
+### FR-03 — Inventory Update
 The system shall update inventory quantities when an order is confirmed.
 
-FR-04 — Low-Stock Monitoring
-
+### FR-04 — Low-Stock Monitoring
 The system shall identify products whose available quantity falls below a configured threshold.
 
-FR-05 — Sales Reporting
-
+### FR-05 — Sales Reporting
 The system shall allow authorized users to view sales reports.
 
-FR-06 — Sales Filtering
-
+### FR-06 — Sales Filtering
 The system shall allow users to filter sales information by:
+- Date
+- Country
+- Product
+- Salesperson
+- Product category
 
-Date
-Country
-Product
-Salesperson
-Product category
-FR-07 — Dashboard
-
+### FR-07 — Dashboard
 The system shall provide management with a dashboard displaying key sales indicators.
 
-22. Success Measures
+## 22. Success Measures
 
-Because this is a proposed system, we should not invent actual improvements such as "sales increased by 20%."
-
+Because this is a **proposed system**, we should not invent actual improvements such as "sales increased by 20%."
 Instead, the project can define measurable success criteria for future implementation.
 
-Area	Proposed KPI
-Reporting	Time required to produce standard reports
-Data quality	Percentage of records passing validation
-Sales visibility	Availability of current sales information
-Inventory	Accuracy of inventory records
-Process efficiency	Number of manual steps in key workflows
-System adoption	Percentage of intended users actively using the system
-Decision support	Availability of required management reports
-23. Assumptions
+| Area	| Proposed KPI |
+|---------|--------------|
+| Reporting	| Time required to produce standard reports |
+| Data quality	| Percentage of records passing validation |
+| Sales visibility	| Availability of current sales information |
+| Inventory	| Accuracy of inventory records |
+| Process efficiency	| Number of manual steps in key workflows |
+| System adoption	| Percentage of intended users actively using the system |
+| Decision support	| Availability of required management reports |
+
+## 23. Assumptions
 
 This case study makes several assumptions because the dataset only contains sales transactions.
+1. Terra Tint Cosmetics is a simulated business.
+2. The dataset represents historical sales activity.
+3. Salespeople are employees responsible for sales transactions.
+4. The business requires management reporting.
+5. The business may eventually require centralized inventory management.
+6. Customers and orders exist as part of the proposed retail process.
+7. The current dataset does not contain customer-level or inventory-level information.
+8. Inventory requirements are therefore proposed system capabilities rather than conclusions from the dataset.
 
-GlowBeauty Cosmetics is a simulated business.
-The dataset represents historical sales activity.
-Salespeople are employees responsible for sales transactions.
-The business requires management reporting.
-The business may eventually require centralized inventory management.
-Customers and orders exist as part of the proposed retail process.
-The current dataset does not contain customer-level or inventory-level information.
-Inventory requirements are therefore proposed system capabilities rather than conclusions from the dataset.
-24. Constraints
+## 24. Constraints
 
 The project has several limitations.
 
-Data limitations
-
+### Data limitations
 The dataset does not contain:
+- Customer ID
+- Customer demographics
+- Inventory on hand
+- Stockout records
+- Reorder points
+- Supplier information
+- Cost of goods sold
+- Profit/margin
+- Payment information
+- Delivery information
+- Order status
+Therefore, the analysis is primarily focused on **sales revenue and transaction-level performance**.
 
-Customer ID
-Customer demographics
-Inventory on hand
-Stockout records
-Reorder points
-Supplier information
-Cost of goods sold
-Profit/margin
-Payment information
-Delivery information
-Order status
-
-Therefore, the analysis is primarily focused on sales revenue and transaction-level performance.
-
-Time limitation
-
+### Time limitation
 The dataset covers only January–August 2022. Therefore, it should not be treated as a complete annual or current business-performance dataset.
 
-Business limitation
-
+### Business limitation
 The business is simulated, so stakeholder requirements and operational processes need to be clearly labeled as proposed/assumed rather than actual company processes.
 
-25. Risks
-Risk	Impact	Mitigation
-Limited historical data	Medium	Clearly define analysis period
-Missing inventory data	High	Treat inventory as proposed capability
-Missing customer information	Medium	Define customer module conceptually
-Incorrect assumptions	High	Validate requirements with stakeholders in a real implementation
-Data-quality issues during future growth	Medium	Implement validation rules
-User resistance to new system	Medium	Provide training and clear workflows
-Scope expansion	High	Define MVP and project boundaries
-26. High-Level Project Approach
+## 25. Risks
+
+| Risk	| Impact	| Mitigation |
+|---------|---------|------------|
+| Limited historical data	| Medium	| Clearly define analysis period |
+| Missing inventory data	| High	| Treat inventory as proposed capability |
+| Missing customer information	| Medium	| Define customer module conceptually |
+| Incorrect assumptions	| High	| Validate requirements with stakeholders in a real implementation |
+| Data-quality issues during future growth	| Medium	| Implement validation rules |
+| User resistance to new system	| Medium	| Provide training and clear workflows |
+| Scope expansion	| High	| Define MVP and project boundaries |
+
+## 26. High-Level Project Approach
 
 The project will follow this Business Analysis chain:
-
+```text
 ACTUAL DATA
      ↓
 DATA FINDINGS
@@ -641,9 +614,10 @@ USER STORY
 ACCEPTANCE CRITERIA
      ↓
 TEST CASE
+```
 
 For example:
-
+```text
 High variation in product revenue
               ↓
 Management needs better product visibility
@@ -659,53 +633,56 @@ User story for Sales Manager
 Acceptance criteria
               ↓
 Test case
-
+```
 This chain is particularly important because it demonstrates actual Business Analyst thinking, rather than simply creating a dashboard.
 
-27. Proposed MVP
+## 27. Proposed MVP
 
 To keep the project realistic, the first version of the system should focus on:
 
-MVP Module 1 — Product Management
-Product records
-Product categories
-Product prices
-MVP Module 2 — Sales Management
-Sales transactions
-Salesperson
-Country
-Date
-Amount
-Quantity
-MVP Module 3 — Inventory Management
-Product stock
-Stock threshold
-Stock movement
-Low-stock notification
-MVP Module 4 — Reporting
-Sales dashboard
-Product performance
-Country performance
-Salesperson performance
-Monthly trends
-MVP Module 5 — User Management
-Admin
-Manager
-Sales staff
-Inventory staff
+### MVP Module 1 — Product Management
+- Product records
+- Product categories
+- Product prices
 
+### MVP Module 2 — Sales Management
+- Sales transactions
+- Salesperson
+- Country
+- Date
+- Amount
+- Quantity
+
+### MVP Module 3 — Inventory Management
+- Product stock
+- Stock threshold
+- Stock movement
+- Low-stock notification
+
+### MVP Module 4 — Reporting
+- Sales dashboard
+- Product performance
+- Country performance
+- Salesperson performance
+- Monthly trends
+
+### MVP Module 5 — User Management
+- Admin
+- Manager
+- Sales staff
+- Inventory staff
 Customer management and advanced features can be added later.
 
-28. Business Case Conclusion
+## 28. Business Case Conclusion
 
-The analysis of the provided cosmetics sales dataset demonstrates meaningful variation in regional, product, salesperson, and monthly sales performance. With total recorded sales of approximately $2.91 million across 374 transactions, the dataset provides sufficient evidence to justify a structured analytical and systems-analysis case study.
-
-The strongest business opportunity is not simply to create another sales dashboard. Instead, the business can use the available sales evidence as the starting point for designing a centralized Cosmetics Retail Management System.
-
+The analysis of the provided cosmetics sales dataset demonstrates meaningful variation in **regional, product, salesperson, and monthly sales performance**. With total recorded sales of approximately **$2.91 million across 374 transactions**, the dataset provides sufficient evidence to justify a structured analytical and systems-analysis case study.
+The strongest business opportunity is not simply to create another sales dashboard. Instead, the business can use the available sales evidence as the starting point for designing a **centralized Cosmetics Retail Management System**.
 The proposed solution would integrate sales, product, customer, inventory, and reporting functions while establishing structured requirements and data-management processes.
-
 The project therefore provides a foundation for progressing from:
-
-Raw sales data → Business insight → Business problem → Requirements → Process design → System design → Database → Testing
-
+``` text 
+**Raw sales data → Business insight → Business problem → Requirements → Process design → System design → Database → Testing**
+```
 This approach will demonstrate practical competencies in Business Analysis, requirements engineering, process modeling, data analysis, database design, and AI-assisted analysis.
+
+## 29. Dataset Evidence Note
+**Data Source & Scope:** This case study uses the provided `cosmetics_sales_data.xlsx` dataset as the analytical foundation. The dataset contains 374 sales transactions across 6 countries, 15 products, and 10 salespeople from January 1 to August 30, 2022. The business name and proposed operational processes are simulated for portfolio purposes. Dataset-derived findings are distinguished from assumptions and proposed system capabilities.
