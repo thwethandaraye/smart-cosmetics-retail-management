@@ -519,5 +519,3 @@ For example:
 
 **Test Case**
 `Verify that an authorized inventory user can successfully update the stock quantity for an existing product.`
-
-This traceability will be continued throughout the requirements, system analysis, and testing stages of the project.

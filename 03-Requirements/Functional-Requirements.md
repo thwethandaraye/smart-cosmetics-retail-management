@@ -119,5 +119,3 @@ The functional requirements translate the business requirements into specific sy
 ## 5. Notes
 
 These functional requirements represent the **proposed system design** for the simulated cosmetics retailer. They should be validated and refined through stakeholder interviews or workshops before actual implementation.
-
-The next step is to define Non-Functional Requirements, which will specify qualities such as security, performance, usability, reliability, maintainability, and scalability.

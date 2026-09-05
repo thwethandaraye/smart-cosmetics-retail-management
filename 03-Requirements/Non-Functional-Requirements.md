@@ -74,5 +74,3 @@ The related NFRs include:
 - NFR-04: Inventory quantities must remain accurate and consistent.
 - NFR-03: Only authorized users should modify inventory.
 - NFR-06: Inventory updates should be processed reliably.
-
-These requirements will later be used when defining acceptance criteria and test cases.
