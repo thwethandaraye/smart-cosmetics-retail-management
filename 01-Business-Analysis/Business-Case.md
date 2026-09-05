@@ -680,7 +680,7 @@ The strongest business opportunity is not simply to create another sales dashboa
 The proposed solution would integrate sales, product, customer, inventory, and reporting functions while establishing structured requirements and data-management processes.
 The project therefore provides a foundation for progressing from:
 ``` text 
-**Raw sales data → Business insight → Business problem → Requirements → Process design → System design → Database → Testing**
+Raw sales data → Business insight → Business problem → Requirements → Process design → System design → Database → Testing
 ```
 This approach will demonstrate practical competencies in Business Analysis, requirements engineering, process modeling, data analysis, database design, and AI-assisted analysis.
 
